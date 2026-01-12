@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Schola Email Template 3</title>
+</head>
+<body>
+    <div class="email-container">
+        <!-- Schola banner -->
+        <div class="header">
+            <a href="#" class="logo">
+                <img src="assets/schola-logo.png" href="#">
+            </a>
+            <a href="#" class="link-to-website">
+                View in browser
+            </a>
+        </div>
+
+        <!-- title -->
+        <div class="title">
+            <img class="welcome-image" src="assets/schola-welcome-3.jpg">
+            <h3>Welcome Abroad to {school_name}</h3>
+        </div>
+
+        <!-- main content: greetings + welcome message + details + automated message -->
+        <div class="content">
+            <p class="greeting">
+                Dear, <span> {school_admin_name} </span>
+            </p>
+
+            <p class="message">
+                We are excited to have you as part of our educational community. 
+                Below are your registration details to access the system:
+            </p>
+
+            <div class="detail school">
+                <p>
+                    Student Details:
+                </p>
+                <ul>
+                    <li>
+                        <span>
+                            School Name
+                        </span>
+                        : {school_name}
+                    </li>
+                    <li>
+                        <span>
+                            System URL
+                        </span>
+                        : {url}
+                    </li>
+                </ul>
+            </div>
+
+            <div class="detail">
+                <p>
+                    Your Login Credential:
+                </p>
+                <ul>
+                    <li>
+                        <span>
+                            Email
+                        </span>
+                        : {email}
+                    </li>
+                    <li>
+                        <span>
+                            Password 
+                        </span>
+                        : {password}
+                    </li>
+                </ul>
+            </div>
+
+            <div class="steps">
+                <p>
+                    Steps to Complete Your Registration:
+                </p>
+                <ol>
+                    <li>
+                        Click on the system URL provided above.
+                    </li>
+                    <li>
+                        Enter your email and password.
+                    </li>
+                    <li>
+                        Follow the instructions to complete your profile setup.
+                    </li>
+                </ol>
+            </div>
+
+            <div class="important">
+                <p>
+                    Important:
+                </p>
+                <ul>
+                    <li>
+                        For security reasons, 
+                        please ensure that both the student and parent passwords are changed upon first login.
+                    </li>
+                    <li>
+                       If you encounter any issues during the registration process, 
+                       please do not hesitate to contact our support team at 
+                       {support_email} or call {contact}.
+                    </li>
+                </ul>
+            </div>
+
+            <p class="message">
+                Thank you for choosing {system_name}. 
+                We are committed to providing you with the best educational tools and resources.
+            </p>
+
+            <p class="automated-messsage">
+                This is an automated message from Schola system.
+                No reply is needed.
+            </p>
+        </div>
+
+        <!-- regards from super admin -->
+        <div class="signature">
+            <p>
+                Best regards,
+            </p>
+            <p>
+                {super_admin_name}
+            </p>
+        </div>
+
+        <!-- footer with academy's support email, contact, website + Schola's 'copyright -->
+        <div class="footer">
+            <div class="contacts">
+                Support Email: <a href="#" class="academy-email"> {support_email} </a> <br>
+                Contact: <a href="#" class="academy-number"> {support_contact} </a> <br>
+                Website: <a href="#" class="academy-website"> {url} </a>
+            </div>
+
+            <div class="copyright">
+                <p class="email-sent">
+                    Email sent by Schola.one 
+                </p>
+                <p class="all-rights-reserved">
+                    Copyright © 2026 Schola.one. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

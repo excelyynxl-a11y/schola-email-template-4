@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@24,400,0,0");
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333333;
+    line-height: 1.6;
+}
+
+.email-container {
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 24px;
+    background: linear-gradient(135deg, #afde9f, #b7e3ee);
+}
+
+.logo img {
+    height: 50px;
+}
+
+.link-to-website {
+    font-size: 12px;
+    color: #595656;
+    opacity: 0.9;
+    text-decoration: underline;
+    display: inline-block; 
+    transition: 
+        transform 0.25s ease,
+        color 0.25s ease,
+        font-size 0.25s ease;
+}
+
+.link-to-website:hover {
+    font-size: 13px;
+    color: #1d1b1b;
+    transform: translateX(3px);
+}
+
+/* title */
+.title {
+    padding: 8px 24px 16px;
+    text-align: center;
+}
+
+.title img {
+    background-color: transparent;
+}
+
+.title h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+/* content */
+.content {
+    padding: 0 24px 24px;
+}
+
+.greeting {
+    font-size: 15px;
+    margin-bottom: 14px;
+}
+
+.greeting span {
+    font-weight: 600;
+    color: #4f46e5;
+}
+
+.message {
+    font-size: 14px;
+    color: #374151;
+    margin-bottom: 18px;
+}
+
+.detail {
+    background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 20px 0;
+}
+
+.detail p {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #111827;
+}
+
+.detail ul {
+    padding-left: 18px;
+}
+
+.detail li {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.detail span {
+    font-weight: 600;
+    color: #4f46e5;
+}
+
+.child span {
+    font-weight: 600;
+    color: #57bb40;
+}
+
+.steps {
+    margin: 24px 0;
+}
+
+.steps p {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #111827;
+}
+
+.steps ol {
+    padding-left: 20px;
+}
+
+.steps li {
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #374151;
+}
+
+.important {
+    background-color: rgb(239, 224, 228);
+    border-left: 4px solid #f73b50;
+    padding: 16px;
+    border-radius: 2px;
+    margin: 24px 0;
+}
+
+.important p {
+    font-weight: 700;
+    color: #860a19;
+    margin-bottom: 8px;
+}
+
+.important ul {
+    padding-left: 18px;
+}
+
+.important li {
+    font-size: 13px;
+    margin-bottom: 6px;
+    color: #78350f;
+}
+
+.download {
+    margin-top: 24px;
+}
+
+.download p {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #111827;
+}
+
+.download ul {
+    padding-left: 18px;
+}
+
+.download li {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.download span {
+    font-weight: 600;
+    color: #4f46e5;
+}
+
+.automated-messsage {
+    font-size: 12px;
+    color: #6b7280;
+    background-color: #edeff1;
+    padding: 12px;
+    border-left: 4px solid #70f73b;
+    border-radius: 2px;
+}
+
+/* regards / signature */
+.signature {
+    padding: 20px 24px;
+    border-top: 1px solid #e5e7eb;
+    font-size: 14px;
+}
+
+.signature p:last-child {
+    font-weight: 600;
+    color: #111827;
+}
+
+/* footer */
+.footer {
+    background-color: #f9fafb;
+    padding: 20px 24px;
+    font-size: 12px;
+    color: #6b7280;
+}
+
+.contacts {
+    margin-bottom: 16px;
+    line-height: 1.8;
+}
+
+.contacts a {
+    color: #4f46e5;
+    text-decoration: none;
+}
+
+.contacts a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    text-align: center;
+    border-top: 1px dashed #d1d5db;
+    padding-top: 12px;
+}
+
+.email-sent {
+    margin-bottom: 4px;
+}
+
+/* mobile */
+@media (max-width: 600px) {
+    .email-container {
+        margin: 20px;
+    }
+
+    .header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .title h3 {
+        font-size: 18px;
+    }
+
+    .detail,
+    .important {
+        padding: 14px;
+        border-radius: 6px;
+    }
+
+    .detail ul,
+    .important ul,
+    .steps ol,
+    .download ul {
+        padding-left: 16px;
+    }
+
+    .detail li,
+    .steps li,
+    .important li,
+    .download li {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .detail p,
+    .steps p,
+    .important p,
+    .download p {
+        font-size: 14px;
+    }
+}
